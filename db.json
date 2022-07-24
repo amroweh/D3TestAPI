@@ -1,7 +1,12 @@
-[{
+{ "nodes": [{
 	"id": "z",
 	"content": "Hello from newnode!"
 }, {
 	"id": "y",
 	"content": "Hello from another newnode!"
-}]
+}],
+"links": [
+	{"source": "a", "target":"z"},
+	{"source": "b", "target":"y"}
+]}
+
