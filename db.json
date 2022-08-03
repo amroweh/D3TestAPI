@@ -2,37 +2,44 @@
 	{
 	"id": 0,
 	"children": [1,2],
-	"content": "Hello from newnode!"
+	"title": "UoS Students",
+	"value": 10000 
 	},
 	{
 	"id": 1,
 	"children": [3],
-	"content": "Hello from newnode!"
+	"title": "PG Students",
+	"value": 3000 
 	},	
 	{
 	"id": 2,
 	"children": [],
-	"content": "Hello from newnode!"
+	"title": "UG Students",
+	"value": 7000 
 	},	
 	{
 	"id": 3,
 	"children": [4,5,6],
-	"content": "Hello from newnode!"
+	"title": "PGT Students",
+	"value": 3000 
 	},	
 	{
 	"id": 4,
 	"children": [],
-	"content": "Hello from newnode!"
+	"title": "Information Management",
+	"value": 1000 
 	},
 	{
 	"id": 5,
 	"children": [],
-	"content": "Hello from newnode!"
+	"title": "Data Science",
+	"value": 1500 
 	},
 	{
 	"id": 6,
 	"children": [],
-	"content": "Hello from newnode!"
+	"title": "Other",
+	"value": 500 
 	}
 ],
 "links": [
