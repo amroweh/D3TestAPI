@@ -3,7 +3,12 @@
 	"id": 0,
 	"children": [1,2],
 	"title": "UoS Students",
-	"value": 10000 
+	"value": 10000,
+	"properties": [
+		{"color": "blue"},
+		{"length": 23},
+		{"width": 10}
+	]
 	},
 	{
 	"id": 1,
@@ -15,7 +20,12 @@
 	"id": 2,
 	"children": [],
 	"title": "UG Students",
-	"value": 7000 
+	"value": 7000,
+	"properties": [
+		{"color": "red"},
+		{"length": 28},
+		{"width": 15}
+	]
 	},	
 	{
 	"id": 3,
@@ -33,7 +43,12 @@
 	"id": 5,
 	"children": [],
 	"title": "Data Science",
-	"value": 1500 
+	"value": 1500,
+	"properties": [
+		{"color": "yellow"},
+		{"length": 50},
+		{"width": 70}
+	]
 	},
 	{
 	"id": 6,
