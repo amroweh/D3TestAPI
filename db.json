@@ -8,6 +8,10 @@
 		{"color": "blue"},
 		{"length": 23},
 		{"width": 10}
+	],
+	"relationships": [
+		[{"target": 1},{"type": "family"},{"value": "brother"}],
+		[{"target": 3},{"type": "family"},{"value": "father"}]
 	]
 	},
 	{
