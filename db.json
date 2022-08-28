@@ -11,7 +11,8 @@
 	],
 	"relationships": [
 		[{"target": 1},{"type": "family"},{"value": "brother"}],
-		[{"target": 3},{"type": "family"},{"value": "father"}]
+		[{"target": 3},{"type": "family"},{"value": "father"}],
+		[{"target": 0},{"type": "family"},{"value": "self"}],
 	]
 	},
 	{
@@ -35,7 +36,11 @@
 	"children": [4,5,6],
 	"title": "PGT Students",
 	"value": 3000 
-	},	
+	},
+	"relationships": [
+		[{"target": 3},{"type": "family"},{"value": "self"}],
+		[{"target": 4},{"type": "family"},{"value": "brother"}]
+	]
 	{
 	"id": 4,
 	"children": [],
