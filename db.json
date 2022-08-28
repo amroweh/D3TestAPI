@@ -39,6 +39,7 @@
 	"value": 3000,
 	"relationships": [
 		[{"target": 3},{"type": "family"},{"value": "self"}],
+		[{"target": 3},{"type": "family"},{"value": "self2"}],
 		[{"target": 4},{"type": "family"},{"value": "brother"}]
 	]
 	},	
