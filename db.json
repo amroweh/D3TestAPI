@@ -12,7 +12,7 @@
 	"relationships": [
 		[{"target": 1},{"type": "family"},{"value": "brother"}],
 		[{"target": 3},{"type": "family"},{"value": "father"}],
-		[{"target": 0},{"type": "family"},{"value": "self"}],
+		[{"target": 0},{"type": "family"},{"value": "self"}]
 	]
 	},
 	{
