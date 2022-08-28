@@ -43,7 +43,7 @@
 	]
 	{
 	"id": 4,
-	"children": [],
+	"children": [1,2,3,4,5,6],
 	"title": "Information Management",
 	"value": 1000 
 	},
