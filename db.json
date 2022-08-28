@@ -35,12 +35,12 @@
 	"id": 3,
 	"children": [4,5,6],
 	"title": "PGT Students",
-	"value": 3000 
-	},
+	"value": 3000,
 	"relationships": [
 		[{"target": 3},{"type": "family"},{"value": "self"}],
 		[{"target": 4},{"type": "family"},{"value": "brother"}]
 	]
+	},	
 	{
 	"id": 4,
 	"children": [1,2,3,4,5,6],
