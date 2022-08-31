@@ -2,51 +2,50 @@
 	{
 	"id": 0,
 	"children": [1,2],
-	"title": "UoS Students",
+	"title": "Information School Students",
 	"value": 10000,
 	"properties": [
-		{"color": "blue"},
-		{"length": 23},
-		{"width": 10}
+		{"Average age": 20},
+		{"Total Courses": 80},
+		{"Average grade": 68}
 	],
 	"relationships": [
-		[{"target": 1},{"type": "family"},{"value": "brother"}],
-		[{"target": 3},{"type": "family"},{"value": "father"}],
-		[{"target": 0},{"type": "family"},{"value": "self"}],
-		[{"target": 0},{"type": "payment"},{"value": "5000$"}]
+		[{"target": 1},{"type": "organizational"},{"value": "oversees"}],
+		[{"target": 3},{"type": "academic"},{"value": "provides teaching tools"}],
+		[{"target": 0},{"type": "organizational"},{"value": "improvement analysis"}]
 	]
 	},
 	{
 	"id": 1,
 	"children": [3],
-	"title": "PG Students",
+	"title": "Postgraduate Students",
 	"value": 3000 
 	},	
 	{
 	"id": 2,
 	"children": [],
-	"title": "UG Students",
+	"title": "Undergraduate Students",
 	"value": 7000,
 	"properties": [
-		{"color": "red"},
-		{"length": 28}
+		{"Average age": 19},
+		{"Most popular course": "Computer Science"}
 	]
 	},	
 	{
 	"id": 3,
 	"children": [4,5,6],
-	"title": "PGT Students",
+	"title": "PG Taught Students",
 	"value": 3000,
 	"relationships": [
-		[{"target": 3},{"type": "family"},{"value": "self"}],
-		[{"target": 3},{"type": "family"},{"value": "self2"}],
-		[{"target": 3},{"type": "family"},{"value": "self3"}],
-		[{"target": 4},{"type": "family"},{"value": "brother"}]
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 4},{"type": "personal"},{"value": "highly rate"}]
 	]
 	},	
 	{
 	"id": 4,
-	"children": [1,2,3,4,5,6],
+	"children": [],
 	"title": "Information Management",
 	"value": 1000 
 	},
@@ -56,10 +55,10 @@
 	"title": "Data Science",
 	"value": 1500,
 	"properties": [
-		{"color": "yellow"},
-		{"length": 50},
-		{"width": 70},
-		{"height": 100}
+		{"Average age": 23.5},
+		{"Rating": 1},
+		{"Total modules": 12},
+		{"Elective modules": 5}
 	]
 	},
 	{
