@@ -12,7 +12,7 @@
 	"relationships": [
 		[{"target": 1},{"type": "organizational"},{"value": "oversees"}],
 		[{"target": 3},{"type": "academic"},{"value": "provides teaching tools"}],
-		[{"target": 0},{"type": "organizational"},{"value": "improvement analysis"}]
+		[{"target": 0},{"type": "organizational"},{"value": "self-improvement"}]
 	]
 	},
 	{
