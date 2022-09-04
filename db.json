@@ -48,7 +48,7 @@
 	},	
 	{
 	"id": 4,
-	"children": [],
+	"children": [2],
 	"title": "Information Management",
 	"value": 1000 
 	},
