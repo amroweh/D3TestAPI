@@ -75,15 +75,9 @@
 		"root": false,
 		"name": "Workflow F",
 		"description": "some description for this workflow",
-		"triggers":[
-			{"type": "webhook", "rate":5, "child": 1},
-			{"type": "timer", "rate":10, "child": 2},
-			{"type": "event", "rate":20, "child": 3}
-		],
+		"triggers":[],
 		"properties": [
-			{"someWfProp1": 20},
-			{"someWfProp2": "someWfValue"},
-			{"someWfProp3": 100}
+			{"someWfProp3": 500}
 		]
 	}
 ]
