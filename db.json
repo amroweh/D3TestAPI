@@ -46,9 +46,8 @@
 		"name": "Workflow D",
 		"description": "some description for this workflow",
 		"triggers":[
-			{"type": "webhook", "rate":5, "child": 1},
-			{"type": "timer", "rate":10, "child": 2},
-			{"type": "event", "rate":20, "child": 3}
+			{"type": "webhook", "rate":5, "child": 4},
+			{"type": "timer", "rate":10, "child": 5}
 		],
 		"properties": [
 			{"someWfProp1": 20},
