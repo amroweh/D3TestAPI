@@ -81,6 +81,82 @@
 	}
 ],
 	
+"triggers":[
+	{
+        "name": "every5minutes",
+        "type": "timer",
+        "data":
+        {
+            "cron": "*/5 * * * *"
+        },
+        "workflows": [
+            {
+                "name": "pollSageInventory",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "every1hour",
+        "type": "timer",
+        "data":
+        {
+            "cron": "0 */1 * * *"
+        },
+        "workflows": [
+            {
+                "name": "pollSageInvoices",
+                "filters": null,
+                "enabled": false
+            },
+            {
+                "name": "pollSageCustomers",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "crmInbound",
+        "type": "webhook",
+        "data":
+        {
+            "url": "api.ferrio.com/webhooks/d1579e68-d208-4acf-be96-2e532db8de3d",
+            "code": "f1741a9f-6f9b-461d-940f-b0f2910e94fd"
+        },
+        "workflows": [
+            {
+                "name": "formatCrmPhoneNumber",
+                "filters": "[expression]",
+                "enabled": true
+            },
+            {
+                "name": "updateMarketingContact",
+                "filters": null,
+                "enabled": true
+            },
+            {
+                "name": "sendSms",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "smsSent",
+        "type": "event",
+        "data": {},
+        "workflows": [
+            {
+                "name": "recordSmsInteraction",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }
+],
+	
 	
 "nodes": [
 	{
