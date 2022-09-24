@@ -1,4 +1,44 @@
 {
+"workflows2":[
+	{
+        "name": "pollSageInvoices",
+        "steps": []
+    },
+    {
+        "name": "pollSageCustomers",
+        "steps": []
+    },
+    {
+        "name": "pollSageInventory",
+        "steps": []
+    },
+    {
+        "name": "formatCrmPhoneNumber",
+        "steps": []
+    },
+    {
+        "name": "updateMarketingContact",
+        "steps": []
+    },
+    {
+        "name": "sendSms",
+        "steps": [
+            {
+                "type": "publishEvent",
+                "data":
+                {
+                    "eventName": "smsSent",
+                    "payload": {}
+                }
+            }
+        ]
+    },
+    {
+        "name": "recordSmsInteraction",
+        "steps": []
+    }
+],	
+	
 "workflows":[
 	{
 		"id": 0,
