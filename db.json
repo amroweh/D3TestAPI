@@ -1,4 +1,112 @@
 {
+	"triggers3":[
+		{
+        "name": "internalLeadPurchasedWebhook",
+        "type": "webhook",
+        "data": {
+            "url": "api.ferrio.com/webhooks/d1579e68-d208-4acf-be96-2e532db8de3d",
+            "code": "f1741a9f-6f9b-461d-940f-b0f2910e94fd"
+        },
+        "workflows": [{
+                "name": "leadPurchasedExternally",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "leadAvailable",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "tutorcruncherWebhook",
+        "type": "webhook",
+        "data": {
+            "url": "api.ferrio.com/webhooks/c6f9b027-c6d2-4b2a-b177-aac7844f0643",
+            "code": "34991710-18e8-47bc-a1fe-0181ce5eed56"
+        },
+        "workflows": [{
+                "name": "cardDetailsUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "appointmentUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "jobStatusUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "invoicePaid",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "repeatingAppointmentCreated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "clientUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "clientChangedPipelineStage",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "jobConfirmationEmailSent",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "studentUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "appointmentCancelled",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "tutorUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "purchasedLeadContacted",
+        "type": "event",
+        "data": {},
+        "workflows": [{
+                "name": "followUpPurchasedLead",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "appointmentUpdated",
+        "type": "event",
+        "data": {},
+        "workflows": [{
+                "name": "consultationPriceCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "consultationDurationCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "consultationUserCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "lessonPaymentCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "lessonConfimationCheck",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }	],
 "workflows2":[
 	{
         "name": "pollSageInvoices",
@@ -120,6 +228,82 @@
 		]
 	}
 ],
+	
+	"workflows3":[
+		{
+        "name": "cardDetailsUpdated",
+        "steps": []
+    }, {
+        "name": "appointmentUpdated",
+        "steps": [{
+                "type": "publishEvent",
+                "data": {
+                    "eventName": "appointmentUpdated",
+                    "payload": {}
+                }
+            }
+        ]
+    }, {
+        "name": "jobStatusUpdated",
+        "steps": []
+    }, {
+        "name": "invoicePaid",
+        "steps": []
+    }, {
+        "name": "repeatingAppointmentCreated",
+        "steps": []
+    }, {
+        "name": "clientUpdated",
+        "steps": []
+    }, {
+        "name": "clientChangedPipelineStage",
+        "steps": []
+    }, {
+        "name": "jobConfirmationEmailSent",
+        "steps": []
+    }, {
+        "name": "studentUpdated",
+        "steps": []
+    }, {
+        "name": "appointmentCancelled",
+        "steps": []
+    }, {
+        "name": "tutorUpdated",
+        "steps": []
+    }, {
+        "name": "leadPurchasedExternally",
+        "steps": [{
+                "type": "publishEvent",
+                "data": {
+                    "eventName": "purchasedLeadContacted",
+                    "payload": {}
+                }
+            }
+        ]
+    }, {
+        "name": "leadAvailable",
+        "steps": []
+    }, {
+        "name": "followUpPurchasedLead",
+        "steps": []
+    }, {
+        "name": "consultationPriceCheck",
+        "steps": []
+    }, {
+        "name": "consultationDurationCheck",
+        "steps": []
+    }, {
+        "name": "consultationUserCheck",
+        "steps": []
+    }, {
+        "name": "lessonPaymentCheck",
+        "steps": []
+    }, {
+        "name": "lessonConfimationCheck",
+        "steps": []
+    }
+	
+	],
 	
 "triggers":[
 	{
