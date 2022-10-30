@@ -1,4 +1,78 @@
-{
+{	
+	"nodes": [
+	{
+	"id": 0,
+	"children": [1,2],
+	"title": "Information School Students",
+	"value": 10000,
+	"properties": [
+		{"Average age": 20},
+		{"Total Courses": 80},
+		{"Average grade": 68}
+	],
+	"relationships": [
+		[{"target": 1},{"type": "organizational"},{"value": "oversees"}],
+		[{"target": 3},{"type": "academic"},{"value": "provides teaching tools"}],
+		[{"target": 0},{"type": "organizational"},{"value": "self-improvement"}]
+	],
+	"description": "The information school at the University of Sheffield is a very well known and highly ranked institution. It has around 10,000 students and is ranked as no.1 in Library and Information Management worldwide."
+	},
+	{
+	"id": 1,
+	"children": [3],
+	"title": "Postgraduate Students",
+	"value": 3000,
+	"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},	
+	{
+	"id": 2,
+	"children": [],
+	"title": "Undergraduate Students",
+	"value": 7000,
+	"properties": [
+		{"Average age": 19},
+		{"Most popular course": "Computer Science"}
+	],
+	"description":"Our undergraduates love it here at Sheffield; they have an amazing education as well as a balanced student life and a lively community"
+	},	
+	{
+	"id": 3,
+	"children": [4,5,6],
+	"title": "PG Taught Students",
+	"value": 3000,
+	"relationships": [
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 4},{"type": "personal"},{"value": "highly rate"}]
+	]
+	},	
+	{
+	"id": 4,
+	"children": [2],
+	"title": "Information Management",
+	"value": 1000 
+	},
+	{
+	"id": 5,
+	"children": [],
+	"title": "Data Science",
+	"value": 1500,
+	"properties": [
+		{"Average age": 23.5},
+		{"Rating": 1},
+		{"Total modules": 12},
+		{"Elective modules": 5}
+	]
+	},
+	{
+	"id": 6,
+	"children": [],
+	"title": "Other",
+	"value": 500 
+	}
+],
+	
 	"triggers3":[
 		{
         "name": "internalLeadPurchasedWebhook",
